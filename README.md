@@ -23,8 +23,8 @@ Users should be able to:
 
 ### Screenshot
 
-<img height="200" src="C:\Users\skishore\workspace\UI_Practice\Tip Calculator\tip-calculator-app\screenshots\img_desktop.png" title="Desktop view"/>
-<img height="300" src="C:\Users\skishore\workspace\UI_Practice\Tip Calculator\tip-calculator-app\screenshots\img_mobile.png" title="Mobile view"/>
+![Desktop view](.\screenshots\img_desktop.png "Desktop view")
+![](.\screenshots\img_mobile.png "Mobile view")
 
 ### Links
 

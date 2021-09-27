@@ -1,0 +1,47 @@
+@import "../../common/color.scss";
+@import "../../common/fonts.scss";
+
+.snap-row {
+  display: flex;
+
+  .desc {
+    flex-basis: 200px;
+  }
+
+  .amt {
+    text-align: right;
+    flex-grow: 1;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: $primary-strong-cyan;
+    display: flex;
+    justify-content: flex-end;
+
+    svg {
+      width: 25px;
+      height: 100%;
+      path {
+        fill: $primary-strong-cyan;
+        transform: scale(1.7) translate(0%, 10%);
+        @media screen and (min-width: 950px) and (max-width: 1200px) {
+          transform: scale(1.4) translate(10%, 10%);
+        }
+      }
+    }
+  }
+}
+
+.desc {
+  display: flex;
+  flex-flow: column nowrap;
+
+  span:first-child {
+    font-size: 0.7rem;
+    color: $neutral-white;
+  }
+
+  span:last-child {
+    font-size: 0.5rem;
+    color: $neutral-light-grayish-cyan-v1;
+  }
+}

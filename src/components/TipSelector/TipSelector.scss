@@ -1,0 +1,64 @@
+@import "../../common/color.scss";
+@import "../../common/fonts.scss";
+.tip-selector{
+    display: flex;
+    flex-basis: 250px;
+    flex-flow: column nowrap;
+
+    .section-label{
+        flex-basis: 2.5rem;
+    }
+    .tips{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        align-content: space-between;
+        flex-grow: 1;
+
+        .tip{
+            flex-basis: 45%;
+            font-size: 1rem;
+            font-family: $font-stack;
+            font-weight: bold;
+            border-radius: 5px;
+            background-color: $neutral-light-grayish-cyan-v1;
+            border: 0;
+            row-gap: 10px;
+            column-gap: 5px;
+
+
+            input{
+                height: 100%;
+                width: 100%;
+                border:none;
+                background: transparent;
+                font: inherit;
+                text-align: center;
+                padding: 0 15px 0 15px;
+                box-sizing: border-box;
+            }
+        }
+
+        .tip:not(div){
+            background-color: $neutral-very-dark-cyan;
+            color: $neutral-white;
+            padding: 8px 0 8px 0;
+        }
+
+        .tip:active:not(div), .tip:focus:not(div){
+            background-color: $primary-strong-cyan;
+            color: $neutral-very-dark-cyan;
+        }
+    }
+}
+
+@media screen and (min-width: 950px) {
+    .tip-selector{
+        .tips{
+
+            .tip{
+                flex-basis: 30%;
+            }
+        }
+    }
+}

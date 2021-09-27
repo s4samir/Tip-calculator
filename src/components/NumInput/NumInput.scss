@@ -1,0 +1,43 @@
+@import "../../common/color.scss";
+@import "../../common/fonts.scss";
+
+.num-input {
+  display: flex;
+  flex-flow: column nowrap;
+
+  input {
+    font-size: 1rem;
+    font-family: $font-stack;
+    font-weight: bold;
+    color: $neutral-very-dark-cyan;
+    background-color: $neutral-light-grayish-cyan-v1;
+    border: 0;
+    border-radius: 10px;
+    height: 2rem;
+    text-align: right;
+    text-indent: 5px;
+    padding: 0 0.2em 0 2rem;
+    width: 100%;
+  }
+  input::placeholder {
+    text-align: right;
+  }
+
+  .input-container::before {
+    content: " ";
+    height: 2rem;
+    width: 2rem;
+    background-repeat: no-repeat;
+    background-size: 0.5em 0.7rem;
+    background-position: center;
+    position: absolute;
+  }
+
+  .dollar::before {
+    background-image: url("../../assets/images/icon-dollar.svg");
+  }
+
+  .person::before {
+    background-image: url("../../assets/images/icon-person.svg");
+  }
+}

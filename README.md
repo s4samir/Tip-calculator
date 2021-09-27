@@ -23,8 +23,8 @@ Users should be able to:
 
 ### Screenshot
 
-![Desktop view](.\screenshots\img_desktop.png "Desktop view")
-![](.\screenshots\img_mobile.png "Mobile view")
+![Desktop view](./screenshots/img_desktop.png "Desktop view")
+![Mobile view](./screenshots/img_mobile.png "Mobile view")
 
 ### Links
 
